@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Set Daily Goals</title>
+</head>
+
+<body>
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-md navbar-dark bg-dark justify-content-end">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="goals.html">Goals</a></li>
+      <li class="nav-item"><a class="nav-link" href="learning.html">Learnings</a></li>
+      <li class="nav-item"><a class="nav-link" href="journal.html">Journal</a></li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Settings
+        </a>
+        <div class="dropdown-menu">
+          <h6 class="dropdown-header">Settings</h6>
+          <a class="dropdown-item" href="profile.html">Profile</a>
+          <a class="dropdown-item" href="#">Another action</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container mt-4">
+    <h2 class="mb-4">Set Daily Goals</h2>
+    <form id="goalsForm">
+      <div class="form-group">
+        <label for="goalInput">Add a Goal:</label>
+        <input type="text" class="form-control" id="goalInput" required>
+      </div>
+      <button type="button" class="btn btn-primary" onclick="addGoal()">Add Goal</button>
+    </form>
+
+    <!-- Goal List -->
+    <div class="mt-4">
+      <h4>Your Goals:</h4>
+      <ul id="goalList" class="list-group">
+        <!-- Goals will be dynamically added here using JavaScript -->
+      </ul>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Your custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+
+</html>
